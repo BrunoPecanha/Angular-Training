@@ -37,6 +37,7 @@ li {
 }
 
 li>button {
+    border: none;
     border-radius: 10px;
     background-color: #fff;
     font-size: 1em;

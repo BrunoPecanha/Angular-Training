@@ -29,6 +29,7 @@ export class AppComponent {
     var taskName = this.form.controls['title'].value;
     if (this.todos.length < 1)    {
       this.todos.push(new Task(1, taskName, false));
+      this.salvar();
       this.clear();
     }     
     else
@@ -62,13 +63,12 @@ export class AppComponent {
   }
 
   salvar() {
-    debugger
     const dado = JSON.stringify(this.todos);
     localStorage.setItem('todos', dado);
+    this.mode = 'list';
   }
 
   carregar(){
-    debugger
     const dado = localStorage.getItem('todos');
     if (dado)
       this.todos = JSON.parse(dado)

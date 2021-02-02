@@ -1,0 +1,82 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+<div class="container">
+    <div class="jumbotron jumbotron-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12">
+                        <h1 class="h1">
+                            Contato
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="well well-sm">
+                        <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">
+                                        Nome</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        Endereço de Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">
+                                        Assunto</label>
+                                    <select id="assunto" name="assunto" class="form-control" required="required">
+                                        <option value="na" selected="">Selecione Um:</option>
+                                        <option value="servico">Serviços gerais ao cliente</option>
+                                        <option value="sugestao">Sugestões</option>
+                                        <option value="produto">Suporte ao produto</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Mensagem</label>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                    Enviar Mensagem</button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                    <legend><span class="glyphicon glyphicon-globe"></span> Nosso Escritório</legend>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        Rua Amadeu Soares, 44<br>
+                        Belford Roxo, RJ - Rio de Janeiro<br>
+                        <abbr title="Phone">
+                            Telefone:</abbr>
+                        (21) 9 8197-0792
+                    </address>
+                    <address>
+                        <strong>Email direto</strong><br>
+                        <a href="mailto:#">brunotkf@hotmail.com</a>
+                    </address>
+                    </form>
+                </div>
+            </div>
+        </div>
+</div>

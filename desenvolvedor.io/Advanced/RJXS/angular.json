@@ -105,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "RJXS"
+  "defaultProject": "RJXS",
+  "cli": {
+    "analytics": false
+  }
 }

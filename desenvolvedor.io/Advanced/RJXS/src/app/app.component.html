@@ -1,0 +1,60 @@
+<div class="container pt-4">
+    <span class="col-2">        
+            <select (change)="selecionaAparelho($event.target.value)" class="form-select mb-3" aria-label=".form-select-lg aparelho">
+              <option selected>Selecione o aparelho</option>
+              <option value="1">iPhone</option>
+              <option value="2">Android</option>
+              <option value="3">Não possuo celular</option>
+            </select>        
+    </span> 
+    <div class="mb-3">    
+      <div class="row"> 
+        <div class="col-6">
+          <label for="lblNomeUsuario" class="form-label">Nome Usuário</label>
+          <input  type="nome" class="form-control" id="nomeUsuario" [(ngModel)]="nome"> 
+        </div>     
+        <div class="col-6">
+          <label for="lblNomeUsuario" class="form-label">Sobrenome</label>
+          <input type="sobrenome" class="form-control" id="nomeUsuario" [(ngModel)]="sobrenome"> 
+        </div>            
+      </div>    
+    <div>
+  </div>
+  </div>
+
+  <div class="mb-3">  
+    <div class="row">
+      <div class="col-6">
+        <label for="lblNomeUsuario" class="form-label">E-mail</label>  
+        <input type="text" class="form-control" id="email" [(ngModel)]="email"> 
+      </div>     
+      <div class="col-6">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Senha</label>
+        <input type="password" class="form-control" id="nomeUsuario" [(ngModel)]="senha"> 
+      </div>            
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Foto</label>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+  
+    <div class="d-grid gap-2 row d-flex justify-content-end">
+      <button class="btn btn-primary col-2" type="button" data-bs-toggle="modal" href="#modal" role="button">Abrir Modal</button> 
+      <button class="btn btn-primary col-2" type="button">Cancelar</button>           
+      <button class="btn btn-primary col-2" type="button" (click)="cadastrar()">Enviar</button>   
+    </div> 
+</div>
+
+ 
+<div class="modal fade" id="modal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      TESTE
+      <div class="modal-footer">      
+        <button class="btn btn-primary" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
